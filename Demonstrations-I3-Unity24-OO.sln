@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo01-Namespace", "Demo01-Namespace\Demo01-Namespace.csproj", "{B5E3097C-DAE9-4DB1-B6A3-12650775A3C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo01-Namespace", "Demo01-Namespace\Demo01-Namespace.csproj", "{B5E3097C-DAE9-4DB1-B6A3-12650775A3C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo02-NotionClass", "Demo02-NotionClass\Demo02-NotionClass.csproj", "{4EAD85DF-9841-4E06-B1B2-0658509EFFDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03-ClassStatic", "Demo03-ClassStatic\Demo03-ClassStatic.csproj", "{1DACFB6A-7512-46EC-BC3B-43D1F4E9DE19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{B5E3097C-DAE9-4DB1-B6A3-12650775A3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5E3097C-DAE9-4DB1-B6A3-12650775A3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5E3097C-DAE9-4DB1-B6A3-12650775A3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EAD85DF-9841-4E06-B1B2-0658509EFFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EAD85DF-9841-4E06-B1B2-0658509EFFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EAD85DF-9841-4E06-B1B2-0658509EFFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAD85DF-9841-4E06-B1B2-0658509EFFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DACFB6A-7512-46EC-BC3B-43D1F4E9DE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DACFB6A-7512-46EC-BC3B-43D1F4E9DE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DACFB6A-7512-46EC-BC3B-43D1F4E9DE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DACFB6A-7512-46EC-BC3B-43D1F4E9DE19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
