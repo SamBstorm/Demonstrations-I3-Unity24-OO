@@ -5,6 +5,9 @@
         static void Main(string[] args)
         {
             Login user1 = new Login();
+
+            Console.WriteLine( user1.NbAttempt ); 
+
             Console.WriteLine("INSCRIPTION :");
             Console.WriteLine("E-Mail:");
             user1.Email = Console.ReadLine();

@@ -12,6 +12,8 @@ namespace Demo05_Proprietes
         #region champs
         private string _email;
         private string _password;
+
+        private int _nbAttempt;
         #endregion
         #region propriétés
         public string Email
@@ -52,6 +54,12 @@ namespace Demo05_Proprietes
                 if (BirthDate.Date > aujourdhui.AddYears(-age)) age--;
                 return age;
             }
+        }
+        
+        public int NbAttempt
+        {
+            get { return _nbAttempt; }
+            set { _nbAttempt = value; }
         }
         #endregion
     }
