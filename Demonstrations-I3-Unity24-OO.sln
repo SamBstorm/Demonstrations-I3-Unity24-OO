@@ -5,13 +5,15 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo01-Namespace", "Demo01-Namespace\Demo01-Namespace.csproj", "{B5E3097C-DAE9-4DB1-B6A3-12650775A3C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo02-NotionClass", "Demo02-NotionClass\Demo02-NotionClass.csproj", "{4EAD85DF-9841-4E06-B1B2-0658509EFFDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo02-NotionClass", "Demo02-NotionClass\Demo02-NotionClass.csproj", "{4EAD85DF-9841-4E06-B1B2-0658509EFFDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03-ClassStatic", "Demo03-ClassStatic\Demo03-ClassStatic.csproj", "{1DACFB6A-7512-46EC-BC3B-43D1F4E9DE19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo03-ClassStatic", "Demo03-ClassStatic\Demo03-ClassStatic.csproj", "{1DACFB6A-7512-46EC-BC3B-43D1F4E9DE19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04-Encapsulation", "Demo04-Encapsulation\Demo04-Encapsulation.csproj", "{20B5D85A-7617-4925-95CC-1F10B61EFE4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo04-Encapsulation", "Demo04-Encapsulation\Demo04-Encapsulation.csproj", "{20B5D85A-7617-4925-95CC-1F10B61EFE4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo05-Proprietes", "Demo05-Proprietes\Demo05-Proprietes.csproj", "{2B5DF92A-149B-42B9-8A2F-3DBAB87C759C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo05-Proprietes", "Demo05-Proprietes\Demo05-Proprietes.csproj", "{2B5DF92A-149B-42B9-8A2F-3DBAB87C759C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo06-Indexeur", "Demo06-Indexeur\Demo06-Indexeur.csproj", "{0D791E15-5C21-4B30-99BB-CA277EBAF2A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2B5DF92A-149B-42B9-8A2F-3DBAB87C759C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B5DF92A-149B-42B9-8A2F-3DBAB87C759C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B5DF92A-149B-42B9-8A2F-3DBAB87C759C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D791E15-5C21-4B30-99BB-CA277EBAF2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D791E15-5C21-4B30-99BB-CA277EBAF2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D791E15-5C21-4B30-99BB-CA277EBAF2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D791E15-5C21-4B30-99BB-CA277EBAF2A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
