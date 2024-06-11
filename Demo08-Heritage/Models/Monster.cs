@@ -8,16 +8,9 @@ namespace Demo08_Heritage.Models
 {
     public class Monster : Character
     {
-
-        public int Attack { get; private set; }
-        public Monster() : base(4)
+        public Monster() : base(4,2)
         {
-            Attack = 2;
         }
 
-        public void Hit(Heroes heroe)
-        {
-            heroe.Hurt(Attack);
-        }
     }
 }

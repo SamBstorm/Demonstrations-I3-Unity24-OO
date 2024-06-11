@@ -6,16 +6,25 @@ namespace Demo08_Heritage
     {
         static void Main(string[] args)
         {
-            Heroes player = new Heroes(10,"Samuel");
+            Character fighter1 = new Heroes(10,"Samuel");
+            Character fighter2 = new Monster();
 
-            Console.WriteLine($"Notre héros {player.Name} ({player.CurrentPV}/{player.PVMax}) se ballade.");
-
-            Monster m1 = new Monster();
-
-            Console.WriteLine($"Un monstre apparait! ({m1.CurrentPV}/{m1.PVMax})");
-            Console.WriteLine($"Le monstre attaque {player.Name}!");
-            m1.Hit(player);
-            Console.WriteLine($"Notre héros {player.Name} ({player.CurrentPV}/{player.PVMax}) a survécu!");
+            do
+            {
+                fighter2.Hit(fighter1);
+                if(fighter1 is Heroes)
+                {
+                    Heroes player = (Heroes)fighter1;
+                    Console.WriteLine($"Notre héro {player.Name} a une vie de : {player.CurrentPV} / {player.PVMax}");
+                }
+                else
+                {
+                    Console.WriteLine($"Le monstre a une vie de : {fighter1.CurrentPV} / {fighter1.PVMax}");
+                }
+                Character temp = fighter1;
+                fighter1 = fighter2;
+                fighter2 = temp;
+            } while (fighter1.CurrentPV > 0 && fighter2.CurrentPV > 0);
 
         }
     }
