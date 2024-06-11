@@ -26,13 +26,13 @@
             Personne personneRecherchee = new Personne(prenom, nom);
 
             if(p1 == personneRecherchee) { 
-                Console.WriteLine($"Nous l'avons trouvé, c'est p1!"); 
+                Console.WriteLine("Nous l'avons trouvé, c'est p1!"); 
             }
             else if(p2 == personneRecherchee) { 
-                Console.WriteLine($"Nous l'avons trouvé, c'est p2!"); 
+                Console.WriteLine("Nous l'avons trouvé, c'est p2!"); 
             }
             else if(p3 == personneRecherchee) { 
-                Console.WriteLine($"Nous l'avons trouvé, c'est p3!"); 
+                Console.WriteLine("Nous l'avons trouvé, c'est p3!"); 
             }
             else
             {
