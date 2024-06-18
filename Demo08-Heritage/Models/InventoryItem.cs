@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo08_Heritage.Models
 {
-    public class InventoryItem
+    public abstract class InventoryItem
     {
         public string Name { get; private set; }
         public InventoryItem(string name)

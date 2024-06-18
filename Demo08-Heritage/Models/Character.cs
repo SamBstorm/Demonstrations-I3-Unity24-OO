@@ -18,7 +18,7 @@ namespace Demo08_Heritage.Models
             CurrentPV = PVMax;
             Attack = attackBase;
         }
-        public void Hit(Character opponent)
+        public virtual void Hit(Character opponent)
         {
             opponent.Hurt(Attack);
         }

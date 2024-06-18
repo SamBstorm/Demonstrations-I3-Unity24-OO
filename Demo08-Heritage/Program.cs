@@ -6,15 +6,19 @@ namespace Demo08_Heritage
     {
         static void Main(string[] args)
         {
-            Character fighter1 = new Heroes(10,"Samuel");
+            Heroes player = new Heroes(10, "Samuel");
+
+            player.AddItem(new EquipmentItem("La masse du C#", 0, 100));
+            player.UseItem(player.Inventory[0]);
+
+            Character fighter1 = player;
             Character fighter2 = new Monster();
 
             do
             {
                 fighter2.Hit(fighter1);
-                if(fighter1 is Heroes player)
+                if(fighter1 is Heroes)
                 {
-                    //Heroes player = (Heroes)fighter1;
                     Console.WriteLine($"Notre héro {player.Name} a une vie de : {player.CurrentPV} / {player.PVMax}");
                 }
                 else
@@ -25,10 +29,10 @@ namespace Demo08_Heritage
                 fighter1 = fighter2;
                 fighter2 = temp;
             } while (fighter1.CurrentPV > 0 && fighter2.CurrentPV > 0);
-            if( fighter1 is Heroes hero)
+            if( fighter1 is Heroes)
             {
-                hero.AddItem(new HealthItem("Potion", 10));
-                hero.UseItem(hero.Inventory[0]);
+                player.AddItem(new HealthItem("Potion", 10));
+                player.UseItem(player.Inventory[1]);
             }
         }
     }

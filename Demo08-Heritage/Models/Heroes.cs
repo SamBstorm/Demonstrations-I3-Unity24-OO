@@ -13,11 +13,20 @@ namespace Demo08_Heritage.Models
         {
             get { return _inventory.ToArray(); }
         }
+
+        private List<EquipmentItem> _equipments;
+
+        public EquipmentItem[] Equipments
+        {
+            get { return _equipments.ToArray(); }
+        }
+
         public string Name { get; private set; }
         public Heroes(int initPV, string name) : base(initPV, 4)
         {
             Name = name;
             _inventory = new List<InventoryItem>();
+            _equipments = new List<EquipmentItem>();
         }
 
         public void AddItem(InventoryItem newItem)
@@ -42,9 +51,24 @@ namespace Demo08_Heritage.Models
                     Healing(hi);
                     _inventory.Remove(hi);
                     break;
-                case EquipmentItem :
+                case EquipmentItem ei :
+                    if (_equipments.Contains(ei)) _equipments.Remove(ei);
+                    else _equipments.Add(ei);
                     break;
             }
+        }
+
+        public override void Hit(Character opponent)
+        {
+            //Automatisme de l'override (appel de la méthode du parent grâce à base)
+            //base.Hit(opponent);
+
+            int bonusAttack = 0;
+            foreach (EquipmentItem ei in Equipments)
+            {
+                bonusAttack += ei.AtkBonus;
+            }
+            opponent.Hurt(Attack + bonusAttack);
         }
 
     }
