@@ -9,7 +9,7 @@ namespace Demo08_Heritage.Models
 {
     public class Character
     {
-        public int CurrentPV { get; private set; }
+        public int CurrentPV { get; protected set; }
         public int PVMax { get; private set; }
         public int Attack { get; private set; }
         public Character(int initPV, int attackBase)
