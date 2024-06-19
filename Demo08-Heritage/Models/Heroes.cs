@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo08_Heritage.Models
 {
-    public class Heroes : Character
+    public class Heroes : Character, IPlayer, INonPlayableCharacter
     {
         private List<InventoryItem> _inventory;
         public InventoryItem[] Inventory
@@ -34,7 +34,7 @@ namespace Demo08_Heritage.Models
             _inventory.Add(newItem);
         }
 
-        public void Healing(HealthItem healthItem)
+        public void Healing(IHealth healthItem)
         {
             CurrentPV += healthItem.HealthPoint;
             CurrentPV = (CurrentPV > PVMax) ? PVMax : CurrentPV;

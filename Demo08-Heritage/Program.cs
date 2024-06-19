@@ -6,12 +6,12 @@ namespace Demo08_Heritage
     {
         static void Main(string[] args)
         {
-            Heroes player = new Heroes(10, "Samuel");
+            IPlayer player = new Heroes(10, "Samuel");
 
             player.AddItem(new EquipmentItem("La masse du C#", 0, 100));
             player.UseItem(player.Inventory[0]);
 
-            Character fighter1 = player;
+            Character fighter1 = (Heroes)player;
             Character fighter2 = new Monster();
 
             do
@@ -31,8 +31,10 @@ namespace Demo08_Heritage
             } while (fighter1.CurrentPV > 0 && fighter2.CurrentPV > 0);
             if( fighter1 is Heroes)
             {
-                player.AddItem(new HealthItem("Potion", 10));
-                player.UseItem(player.Inventory[1]);
+                /*player.AddItem(new HealthItem("Potion", 10));
+                player.UseItem(player.Inventory[1]);*/
+                IHealth fontaine = new HealthObject(100);
+                player.Healing(fontaine);
             }
         }
     }

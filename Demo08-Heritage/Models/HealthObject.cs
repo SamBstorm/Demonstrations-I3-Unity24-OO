@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Demo08_Heritage.Models
 {
-    public class HealthItem : InventoryItem , IHealth
+    public class HealthObject : IHealth
     {
         public int HealthPoint { get; private set; }
-        public HealthItem(string name, int healthPoint) : base(name)
+
+        public HealthObject(int healthPoint)
         {
             HealthPoint = healthPoint;
         }
